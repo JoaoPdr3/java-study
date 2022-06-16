@@ -11,7 +11,7 @@ public class Pessoa {
 	}
 	
 	public String getClasseSocial() {
-		if(getSalario() <= 600) {
+		if(getSalario() < 950) {
 			return "F";
 		} else if(getSalario() >= 950 && getSalario() < 1400) {
 			return "E";
@@ -29,7 +29,7 @@ public class Pessoa {
 	
 	@Override
 	public String toString() {
-		return "\nNome: "+getNome()+"\nCPF: "+getCpf()+" \nSalário: "+getSalario()+"\nClasse Social: "+getClasseSocial();
+		return "\nNome: "+getNome()+"\nCPF: "+getCpf()+" \nSalï¿½rio: "+getSalario()+"\nClasse Social: "+getClasseSocial();
 	}
 
 	public String getNome() {
